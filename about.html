@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+
+        .center h1 {
+            padding: 40px;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color:rgb(249, 79, 79);
+            color: white;
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="./logo.png" alt="">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="navbar.html" onclick="changeColor()" id="color"><b>HOME</b></a></li>
+                <li class="drop" onclick="showDrop()"><a href="#" onclick="changeColor()" id="color"><b>PAGES</b><i class="fa-solid fa-angle-down"></i>
+
+                        <div class="dropdown">
+                            <p><a href="about.html" onclick="changeColor()" id="color">About</a></p>
+                            <p>Testimonial</p>
+                        </div>
+                    </a>
+
+                </li>
+                <li><a href="./product.html" onclick="changeColor()" id="color"><b>PRODUCTS</b></a></li>
+                <li><a href="./blog.html" onclick="changeColor()" id="color"><b>BLOG</b></a></li>
+                <li><a href="#" onclick="changeColor()" id="color"><b>CONTACT</b></a></li>
+            </ul>
+        </div>
+        <div class="icon">
+            <a href="#"><i class="fa-solid fa-cart-shopping" onclick="showCart()"></i></a>
+            <input type="search" name="" id="searchInput">
+            <i class="fa-solid fa-magnifying-glass" onclick="Search()"></i>
+        </div>
+    </header>
+
+    <div class="center">
+        <h1>About us</h1>
+    </div>
+
+    <div class="centertext">
+        <h1>Why Shop With Us</h1>
+        <div class="line"></div>
+    </div>
+
+    <div class="Delivery">
+        <div class="fast">
+            <a href="#"><i class="fa-solid fa-truck"></i></a>
+            <h2>Fast Delivery</h2>
+            <p>variations of passages of Lorem Ipsum available</p>
+        </div>
+        <div class="fast">
+            <a href="#"><i class="fa-brands fa-shopify"></i></a>
+            <h2>Free Shiping</h2>
+            <p>variations of passages of Lorem Ipsum available</p>
+        </div>
+        <div class="fast">
+            <a href="#"><i class="fa-regular fa-star"></i></a>
+            <h2>Best Quality</h2>
+            <p>variations of passages of Lorem Ipsum available</p>
+        </div>
+
+    </div>
+    <div class="bimg">
+        <div class="img2">
+            <img src="./arrival-bg.png" alt="">
+        </div>
+        <div class="text1">
+            <h2>#NewArrivals</h2>
+            <p>
+                Vitae fugiat laboriosam officia perferendis provident aliquid voluptatibus dolorem, fugit ullam
+                sit
+                earum id eaque nisi hic? Tenetur commodi, nisi rem vel, ea eaque ab ipsa, autem similique ex
+                unde!
+            </p>
+            <a href class="btn1">Shop Now</a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

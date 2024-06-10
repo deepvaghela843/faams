@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <section>
+            <div class="cart">
+            </div>
+            <header class="navbar">
+                <div class="logo">
+                    <img src="./logo.png" alt="">
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#"><b>HOME</b></a></li>
+                        <li class="drop" onclick="showDrop()"><a href="#"><b>PAGES</b><i
+                                    class="fa-solid fa-angle-down"></i>
+                                <div class="dropdown">
+                                    <p><a href="about.html">About</a></p>
+                                    <p>Testimonial</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="product.html"><b>PRODUCTS</b></a></li>
+                        <li><a href="./blog.html"><b>BLOG</b></a></li>
+                        <li><a href="#"><b>CONTACT</b></a></li>
+                    </ul>
+                </div>
+
+                <div class="icon">
+                    <a href="#"><i class="fa-solid fa-cart-shopping" onclick="showCart()"></i></a>
+                    <input type="search" name="" id="searchInput" placeholder="search">
+                    <i class="fa-solid fa-magnifying-glass" onclick="Search()"></i>
+                </div>
+            </header>
+            <div class="bgimge">
+                <img src="./slider-bg.jpg" alt="">
+                <div class="text">
+                    <h1>Sale 20% Off<br>
+                        <span style="color: black;">On Everything</span>
+                    </h1>
+                    <p>Explicabo esse amet tempora quibusdam laudantium,laborum eaque magnam fugiat hic? Esse dicta
+                        aliquid
+                        error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus
+                        repellat modi impedit sequi.</p>
+                    <a class="btn">Shop Now</a>
+                </div>
+            </div>
+
+            <div class="centertext">
+                <h1>Why Shop With Us</h1>
+                <div class="line"></div>
+            </div>
+
+            <div class="Delivery">
+                <div class="fast">
+                    <a href="#"><i class="fa-solid fa-truck"></i></a>
+                    <h2>Fast Delivery</h2>
+                    <p>variations of passages of Lorem Ipsum available</p>
+                </div>
+                <div class="fast">
+                    <a href="#"><i class="fa-brands fa-shopify"></i></a>
+                    <h2>Free Shiping</h2>
+                    <p>variations of passages of Lorem Ipsum available</p>
+                </div>
+                <div class="fast">
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                    <h2>Best Quality</h2>
+                    <p>variations of passages of Lorem Ipsum available</p>
+                </div>
+            </div>
+            <div class="bimg">
+                <div class="img2">
+                    <img src="./arrival-bg.png" alt="">
+                </div>
+                <div class="text1">
+                    <h2>#NewArrivals</h2>
+                    <p>
+                        Vitae fugiat laboriosam officia perferendis provident aliquid voluptatibus dolorem, fugit ullam
+                        sit
+                        earum id eaque nisi hic? Tenetur commodi, nisi rem vel, ea eaque ab ipsa, autem similique ex
+                        unde!
+                    </p>
+                    <a href class="btn1">Shop Now</a>
+                </div>
+            </div>
+            <div class="centertext1">
+                <h1>Our <span style="color: red;">products</span></h1>
+                <div class="line2"></div>
+            </div>
+
+        </section>
+
+        <div class="singlepage">
+            <img src="" alt="" id="images10">
+            <button onclick="document.querySelector('.singlepage').style.display = 'none' "><iclass="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div id="data">
+
+        </div>
+
+        <div class=centertext2>
+            <a href="#" class="btn2">View All Products</a>
+        </div>
+
+        <div class="backpage">
+            <h3>Subscribe To Get Discount Offers</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            <input type="text" placeholder="Enter Your Email">
+            <p><a href="#">SUBSCRIBE</a></p>
+        </div>
+
+        <div class="footer">
+            <div class="footer-row">
+                <div class="logo-footer">
+                    <a href="#"><img src="./logo.png" alt=""></a>
+                    <div class="information">
+                        <p><strong>ADDRESS:</strong>28 White tower, Street Name New York City, USA</p>
+                        <p><strong>TELEPHONE:</strong> +91 987 654 3210</p>
+                        <p><strong>EMAIL:</strong>yourmain@gmail.com</p>
+
+                    </div>
+
+                </div>
+                <div class="footer-col">
+                    <h4>MENU</h4>
+                    <ul class="links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Testimonial</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Conatct</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>ACCOUNT</h4>
+                    <ul class="links">
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Checkout</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Shopping</a></li>
+                        <li><a href="#">Widget</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>NEWSLETTER</h4>
+                    <p>Subscribe by our newsletter and get update protidin.</p>
+                    <form action="#">
+                        <input type="text" placeholder="Enter your emil address">
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        .center h1 {
+            padding: 40px;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: rgb(249, 79, 79);
+            color: white;
+        }
+
+        .row {
+            display: flex;
+            background-color: #002C3E;
+            padding: 70PX 0px;
+
+        }
+        .footer-contect {
+            margin-left: 70px;
+        }
+
+        .footer-contect h4 {
+            padding: 10px;
+            font-size: 30px;
+            color: white;
+
+        }
+
+        .link-div a {
+            color: white;
+            display: block;
+            padding: 10px;
+        }
+
+        .footer-deatil {
+            color: white;
+            padding: 10px;
+            text-align: justify;
+            margin-left: 170px;
+        }
+
+
+        .footer-logo {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .footer-deatil p {
+            padding: 30px 0;
+            width: 350px;
+            font-size: 20px;
+        }
+
+        .social a {
+            color: black;
+            font-size: 20px;
+            padding: 10px;
+            margin: 0px 5px;
+            background-color: white;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        .social a:hover {
+            color: white;
+            background-color: transparent;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="./logo.png" alt="">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="navbar.html" onclick="changeColor()" id="color"><b>HOME</b></a></li>
+                <li class="drop" onclick="showDrop()"><a href="#" onclick="changeColor()" id="color"><b>PAGES</b><i
+                            class="fa-solid fa-angle-down"></i>
+
+                        <div class="dropdown">
+                            <p><a href="about.html" onclick="changeColor()" id="color">About</a></p>
+                            <p>Testimonial</p>
+                        </div>
+                    </a>
+
+                </li>
+                <li><a href="./product.html" onclick="changeColor()" id="color"><b>PRODUCTS</b></a></li>
+                <li><a href="./blog.html" onclick="changeColor()" id="color"><b>BLOG</b></a></li>
+                <li><a href="#" onclick="changeColor()" id="color"><b>CONTACT</b></a></li>
+            </ul>
+        </div>
+        <div class="icon">
+            <a href="#"><i class="fa-solid fa-cart-shopping" onclick="showCart()"></i></a>
+            <input type="search" name="" id="searchInput">
+            <i class="fa-solid fa-magnifying-glass" onclick="Search()"></i>
+        </div>
+    </header>
+
+    <div class="center">
+        <h1>Blog List</h1>
+    </div>
+
+    <div class="centertext">
+        <h1>Why Shop With Us</h1>
+        <div class="line"></div>
+    </div>
+
+    <div class="Delivery">
+        <div class="fast">
+            <a href="#"><i class="fa-solid fa-truck"></i></a>
+            <h2>Fast Delivery</h2>
+            <p>variations of passages of Lorem Ipsum available</p>
+        </div>
+        <div class="fast">
+            <a href="#"><i class="fa-brands fa-shopify"></i></a>
+            <h2>Free Shiping</h2>
+            <p>variations of passages of Lorem Ipsum available</p>
+        </div>
+        <div class="fast">
+            <a href="#"><i class="fa-regular fa-star"></i></a>
+            <h2>Best Quality</h2>
+            <p>variations of passages of Lorem Ipsum available</p>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="footer-contect">
+            <h4>Reach at..</h4>
+            <div class="link-div">
+                <a href="#"><i class="fa-solid fa-location-dot"></i><span>Location</span></a>
+                <a href="#"><i class="fa-solid fa-phone"></i><span>Call +01 1234567890</span></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i><span>demo@gmail.com</span></a>
+            </div>
+        </div>
+        <div class="footer-deatil">
+            <a href="#" class="footer-logo">Famms</a>
+            <p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200
+                Latin
+                words, combined with</p>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
